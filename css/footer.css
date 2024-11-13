@@ -1,0 +1,32 @@
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #ddd;
+}
+
+.footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    color: #aaa;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer .social-icons a {
+    font-size: 1.2rem;
+}
+
+.footer .form-inline input {
+    width: calc(100% - 120px);
+}
+
+.footer .text-center {
+    border-top: 1px solid #555;
+    margin-top: 20px;
+}

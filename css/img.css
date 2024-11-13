@@ -1,0 +1,72 @@
+/* Featured Section */
+#featured {
+    background-color: #f9f9f9;
+}
+
+#featured h2 {
+    font-weight: 700;
+    color: #333;
+}
+
+.car-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+}
+
+.car-card .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.badge-price {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 0.25rem;
+}
+
+.car-card .card-title {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.car-card .card-text {
+    font-size: 0.95rem;
+    color: #777;
+}
+
+.car-specs {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.car-specs li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.car-specs i {
+    color: #007bff;
+    margin-right: 0.5rem;
+}
+
+.btn-outline-primary {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}

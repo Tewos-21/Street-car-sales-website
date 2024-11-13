@@ -1,0 +1,137 @@
+/* Reset some basic elements */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Modern and clean font */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #212529; /* Darker background for contrast */
+    padding: 1.5rem 2rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for navbar */
+}
+
+.navbar a.navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f8f9fa; /* Lighter color for the brand */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease;
+}
+
+.navbar a.navbar-brand:hover {
+    color: #007bff; /* Hover effect on brand */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #f8f9fa;
+    font-size: 1.2rem;
+    padding: 1.25rem 1.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff;
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Dropdown Menu Styling */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.nav-link.dropdown-toggle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #f8f9fa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link.dropdown-toggle:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.dropdown-menu {
+    background-color: #343a40; /* Darker background for dropdown */
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* Drop shadow for the dropdown */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-item {
+    color: #f8f9fa;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Add smooth hover effect on dropdown items */
+.dropdown-item:active,
+.dropdown-item:focus {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.navbar-nav .nav-item .dropdown-toggle::after {
+    content: ' ▼'; /* Adds an arrow icon to dropdown */
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-item:hover .dropdown-toggle::after {
+    transform: rotate(180deg); /* Rotate the arrow on hover */
+}
+
+/* Smooth transitions and animations for dropdown */
+.nav-item.dropdown:hover .nav-link.dropdown-toggle {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-item .nav-link {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+
+    .nav-link.dropdown-toggle {
+        font-size: 1rem;
+        padding: 0.75rem 1.25rem;
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: none; /* Remove shadow for mobile */
+    }
+}

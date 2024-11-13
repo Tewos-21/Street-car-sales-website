@@ -1,0 +1,20 @@
+/* Learn More Page */
+#car-details h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#car-details h4 {
+    font-weight: 700;
+}
+
+#car-details .car-specs {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 1rem;
+}
+
+#payment h2 {
+    color: #333;
+    font-weight: 700;
+}

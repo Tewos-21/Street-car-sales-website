@@ -1,0 +1,188 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+/* About Section */
+.about-page h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #007bff;
+}
+
+/* Space between Mission and Team sections */
+/* Space between Mission and Team sections */
+.mission-section {
+    margin-bottom: 80px; /* Increase the space between Mission and Team sections */
+}
+
+.team-section {
+    margin-top: 60px; /* Add more top margin to ensure distinct separation */
+}
+
+
+
+.mission-section .mission-content {
+    background: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.display-4 {
+    color: #007bff;
+}
+
+.lead {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Team Section */
+.team-section h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.team-member {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body h5 {
+    font-size: 1.3rem;
+    color: #007bff;
+}
+
+/* Core Values */
+.values-section {
+    background: #f4f4f8;
+    padding: 50px 0;
+}
+
+.values-section h3 {
+    color: #007bff;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.value-box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.value-box h5 {
+    color: #333;
+    font-weight: bold;
+}
+
+.value-box p {
+    color: #555;
+}
+
+/* Map Section */
+.map-container iframe {
+    border: 3px solid #007bff;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.map-container iframe:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    background: #1e212d;
+    color: #f8f9fa;
+    padding: 2.5rem 0;
+}
+
+.footer h5 {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.footer a {
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffd700;
+}
+
+.social-icons a {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.15);
+    color: #ffd700;
+}
+
+.footer .form-control {
+    border: 1px solid #555;
+    border-radius: 0;
+    color: #333;
+}
+
+.footer .btn-primary {
+    background: #ffd700;
+    border: none;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+.footer .btn-primary:hover {
+    background: #ffcc00;
+}
+
+.footer p {
+    margin-bottom: 0;
+    color: #bbb;
+}
+
+/* Decrease space between Core Values and Visit Us (map) */
+/* Decrease space between Core Values and Visit Us (map) */
+.values-section {
+    margin-bottom: 50px; /* Adjust the bottom margin of Core Values section */
+}
+
+.map-container {
+    margin-top: -20px; /* Pull the map section up to reduce the gap */
+}
+
+
+/* Increase space between the Google Map and Footer */
+.map-container {
+    margin-bottom: 40px; /* Adjust this value for the desired gap */
+}
+
+.footer {
+    margin-top: 40px; /* Adds a top margin to the footer */
+}
+

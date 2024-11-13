@@ -1,0 +1,253 @@
+/* Reset some basic elements */
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #1d1d1d; /* Dark background */
+    padding: 1rem 2rem;
+}
+
+.navbar a.navbar-brand {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #f0f0f0; /* Light color for brand */
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #f0f0f0; /* Light color for nav links */
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff; /* Hover color for nav links */
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background: url('../assets/electrics/Cybertruck.jpg') center/cover no-repeat;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background-attachment: fixed; /* Parallax effect */
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+.search-bar {
+    display: flex;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+}
+
+.search-btn {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Featured Section */
+#featured {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+}
+
+#featured h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #343a40;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: 0.3s ease;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #777;
+}
+
+.car-specs li {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.car-card-container {
+    padding: 1.25rem;
+}
+
+.badge-price {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.25rem;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #1d1d1d;
+    color: #f8f9fa;
+    padding: 3rem 0;
+}
+
+.footer h5 {
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer .list-unstyled li a {
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .list-unstyled li a:hover {
+    color: #007bff; /* Hover color for footer links */
+}
+
+.footer .social-icons a {
+    color: #f8f9fa;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #007bff;
+}
+
+.footer .text-center p {
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .search-bar {
+        max-width: 100%;
+    }
+
+    .card {
+        margin-bottom: 2rem;
+    }
+
+    .footer .col-md-3 {
+        margin-bottom: 2rem;
+    }
+}
